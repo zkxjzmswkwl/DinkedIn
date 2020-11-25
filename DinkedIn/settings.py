@@ -40,9 +40,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
-    'members.app.MembersConfig',
-    'messages.app.MessagesConfig',
-    'orgs.app.OrgsConfig',
+    'members.apps.MembersConfig',
+    'dms.apps.DmsConfig',
+    'orgs.apps.OrgsConfig',
 
 ]
 

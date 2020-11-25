@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['localhost']
 
 
+AUTH_USER_MODEL = 'members.Member'
 # Application definition
 
 INSTALLED_APPS = [
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
     'members.apps.MembersConfig',
     'dms.apps.DmsConfig',
     'orgs.apps.OrgsConfig',
+    'games.apps.GamesConfig'
 
 ]
 
@@ -71,8 +73,6 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                'corsheaders.middleware.CorsMiddleware',
-                'django.middleware.security.SecurityMiddleware'
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
